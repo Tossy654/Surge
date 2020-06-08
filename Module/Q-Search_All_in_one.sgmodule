@@ -56,9 +56,9 @@
 [URL Rewrite]
 
 #gm   (Google图片)
-^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
+^https:\/\/duckduckgo.com\/\?q=goo\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
 # gh   (GitHub)
-^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ https://github.com/search?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=git\+([^&]+).+ https://github.com/search?q=$1 302
 
 # sof  (Stack Overflow)
 ^https:\/\/duckduckgo.com\/\?q=sof\+([^&]+).+ https://stackoverflow.com/search?q=$1 302
@@ -101,7 +101,7 @@
 ^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search/?query=$1 302
 
 # zh: 知乎
-^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ https://www.zhihu.com/search?type=content&q=$1 302
+^https:\/\/duckduckgo.com\/\?q=zhi\+([^&]+).+ https://www.zhihu.com/search?type=content&q=$1 302
 
 # wb: 微博
 ^https:\/\/duckduckgo.com\/\?q=wb\+([^&]+).+ https://s.weibo.com/weibo/$1 302
