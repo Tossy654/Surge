@@ -1,0 +1,15 @@
+#!name=哔哩哔哩unblock
+#!desc=哔哩哔哩大会员
+
+
+[Rule]
+URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
+URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
+
+[Script]
+http-response https://api.bilibili.com/pgc/player/api/playurl requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/bilibili.unblock.playurl.min.js
+http-response https://api.bilibili.com/pgc/view/app/season requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/bilibili.unblock.season.min.js
+
+
+[MITM]
+hostname = api.bilibili.com
